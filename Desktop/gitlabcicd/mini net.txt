@@ -1,0 +1,36 @@
+Faculty Cloud8:40 PM
+git clone https://github.com/mininet/mininet.git
+ls
+cd mininet
+ls
+Faculty Cloud8:41 PM
+./util/install.sh 
+Faculty Cloud8:49 PM
+mn --version
+mn
+Faculty Cloud8:50 PM
+nodes
+sudo mn
+nodes
+Faculty Cloud8:52 PM
+dump
+h1 ifconfig -a
+Faculty Cloud8:53 PM
+h2 ifconfig -a
+s1 ifconfig -a
+h1 ps -a
+h2 ps -a
+Faculty Cloud8:54 PM
+s1 ps -a
+h1 ping -c 1 h2
+Faculty Cloud8:55 PM
+h1 ping -c 4 h2
+pingall
+Faculty Cloud8:57 PM
+h1 python -m http.server 80 &
+Faculty Cloud8:59 PM
+py sys.version
+h2 wget -O - h1
+py h1.IP()
+Faculty Cloud9:03 PM
+exit
